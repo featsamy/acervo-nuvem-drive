@@ -1,0 +1,57 @@
+{
+  "id": "acervo-nuvem-drive",
+  "title": "Acervo na Nuvem e Explorador de ZIP (Google Drive)",
+  "description": "Navegue pelos pacotes .ZIP compartilhados no Google Drive ou no PC, visualize miniaturas e videos (.webm/.mp4/.png/.jpg) de dentro do .ZIP antes de baixar, traduza nomes para Portugues e instale apenas os Mapas ou Tokens Wildcard que for usar na sessao.",
+  "version": "1.0.2",
+  "authors": [
+    {
+      "name": "featsamy"
+    }
+  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "13.351"
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/acervo-nuvem.css"
+  ],
+  "packs": [
+    {
+      "name": "cenas-nuvem",
+      "label": "Cenas Instaladas da Nuvem",
+      "path": "packs/cenas-nuvem",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tokens-nuvem",
+      "label": "Tokens Instalados da Nuvem",
+      "path": "packs/tokens-nuvem",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Acervo da Nuvem",
+      "sorting": "m",
+      "color": "#333333",
+      "packs": [
+        "cenas-nuvem",
+        "tokens-nuvem"
+      ]
+    }
+  ],
+  "url": "https://github.com/featsamy/acervo-nuvem-drive",
+  "manifest": "https://raw.githubusercontent.com/featsamy/acervo-nuvem-drive/main/module.json",
+  "download": "https://github.com/featsamy/acervo-nuvem-drive/raw/main/release/acervo-nuvem-drive.zip"
+}
